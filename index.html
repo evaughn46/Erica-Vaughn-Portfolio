@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Erica Vaughn — Cloud & AI Solution Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0078d7 0%, #5b2be1 100%); }
+    .card-hover { transition: transform .25s ease, box-shadow .25s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 18px 30px -12px rgba(0,0,0,.15); }
+    .sticky-nav { backdrop-filter: blur(6px); background: rgba(255,255,255,.85); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 sticky-nav border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-bold text-lg">EV</a>
+      <div class="hidden md:flex gap-6">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+      <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-gray-100" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200">
+      <div class="px-4 py-3 flex flex-col gap-3 bg-white">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="gradient-bg text-white py-24">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-3">Erica Vaughn</h1>
+      <p class="text-lg md:text-xl opacity-95">Cloud & AI Solution Engineer · Data Platforms</p>
+      <p class="max-w-2xl mx-auto mt-4 opacity-90">
+         Azure · Synapse Link · Databricks · Power Pages/Apps · Power BI · Azure ML · ADLS · Fabric
+      </p>
+      <div class="mt-8 flex items-center justify-center gap-3 flex-wrap">
+        <a href="#projects" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-100">View Projects</a>
+        <a href="assets/Erica_Vaughn_Resume.pdf" target="_blank" class="border border-white px-6 py-3 rounded-lg font-semibold">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-14 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-700 mb-4">
+        Cloud-native Data Scientist and AI Consultant with a strong foundation in architecting production-scale ML systems across Azure and Databricks. 
+        Experienced in building CI/CD pipelines, real-time and batch ML workflows, and enterprise-level data platforms that transform operations. 
+        Proven track record delivering results in retail environments—reducing costs, optimizing inventory, and scaling analytics adoption. 
+        Excels at bridging engineering, analytics, and business stakeholders to deliver actionable insights.
+      </p>
+      <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+        <h3 class="font-semibold mb-2">LinkedIn Blog Series</h3>
+        <p class="text-gray-700">
+          I write about my first-hand Cloud + AI experience: patterns for Azure data platforms, Power Platform in the enterprise, and
+          ML that business leaders trust. Read it on
+          <a class="text-blue-700 underline" href="https://www.linkedin.com/pulse/day-1-from-humble-beginnings-embarking-data-frontier-erica-vaughn-rxifc/?trackingId=UYaGS%2Bu6DT0BnI8dCOyv4g%3D%3D" target="_blank" rel="noopener">LinkedIn</a>.
+          <!-- Edit the link above to your blog series URL -->
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-14 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="case-studies/case-databricks.html" class="block bg-white rounded-xl border border-gray-200 p-6 card-hover">
+          <h3 class="text-xl font-semibold mb-2">Extending Dynamics 365 with Synapse Link + Databricks</h3>
+          <p class="text-gray-600">Azure-first POC extending F&O analytics: longer retention, faster refresh, and cost efficiency.</p>
+          <p class="text-blue-700 mt-3">Read case study →</p>
+        </a>
+        <a href="case-studies/case-demand-planner.html" class="block bg-white rounded-xl border border-gray-200 p-6 card-hover">
+          <h3 class="text-xl font-semibold mb-2">AI-Enhanced Demand Planner (Power Pages)</h3>
+          <p class="text-gray-600">Automated planogram scaling and history linking on top of Blue Yonder forecasts.</p>
+          <p class="text-blue-700 mt-3">Read case study →</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Skills</h2>
+      <div class="grid md:grid-cols-4 gap-6 text-gray-700">
+        <div><h4 class="font-semibold mb-2">Azure</h4><ul class="list-disc ml-5 space-y-1">
+          <li>Data Factory, Synapse Link, Azure SQL</li><li>ADLS, Logic Apps, Fabric</li></ul></div>
+        <div><h4 class="font-semibold mb-2">Databricks</h4><ul class="list-disc ml-5 space-y-1">
+          <li>Delta, Unity Catalog, Databricks Asset Bundles</li><li>Workflows, PySpark, ETL/ELT</li></ul></div>
+        <div><h4 class="font-semibold mb-2">Power Platform</h4><ul class="list-disc ml-5 space-y-1">
+          <li>Power Pages, Power Apps, Power Automate</li><li>Power BI, DAX</li></ul></div>
+        <div><h4 class="font-semibold mb-2">ML & Dev</h4><ul class="list-disc ml-5 space-y-1">
+          <li>Python, SQL, R, Scala</li><li>Azure ML, CI/CD (ADO)</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-14 gradient-bg text-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-2">Contact</h2>
+      <p class="opacity-95">Email <a class="underline" href="mailto:Ericat649@gmail.com">Ericat649@gmail.com</a> •
+         LinkedIn <a class="underline" target="_blank" href="https://www.linkedin.com/in/erica-vaughn-9b820a13b">/in/erica-vaughn</a></p>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-600">
+    © <span id="year"></span> Erica Vaughn. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
