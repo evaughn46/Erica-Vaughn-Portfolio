@@ -1,15 +1,15 @@
-# Erica Vaughn — Tailwind Portfolio (Editable)
+# Erica Vaughn — Portfolio
 
-This is a fully editable, Tailwind-based portfolio with:
+This is a portfolio with:
 - `index.html` (hero, about w/ LinkedIn blog, projects, skills, contact)
-- `case-studies/case-databricks.html` (Microsoft-first framing: Synapse Link + Databricks)
+- `case-studies/case-databricks.html` (framing: Synapse Link + Databricks)
 - `case-studies/case-demand-planner.html` (Power Pages tool on Blue Yonder baseline)
-- `assets/Erica_Vaughn_Resume.pdf` (replace if needed)
-- `assets/screenshots/` (drop your PNG/JPG screenshots and update the <img> tags)
+- `assets/Erica_Vaughn_Resume.pdf` 
+- `assets/screenshots/` (case-study based)
 - `script.js` (smooth scroll, mobile menu, footer year)
 
 ## Edit
-Open the HTML files in VS Code and change copy/links. Tailwind is loaded via CDN for simplicity.
+Open the HTML files in VS Code and change copy/links. 
 
 ## Deploy
 - GitHub Pages: push this folder, then Settings → Pages → Deploy from branch (root).
